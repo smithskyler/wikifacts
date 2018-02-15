@@ -107,7 +107,11 @@ $(document).ready(function() {
 						} else {
 							html += "<h2>False!</h2>"
 						}
-						html += "<p>..." + sectionContent + "...</p>"
+						function makeBold(input, wordsToBold) {
+    						return input.replace(new RegExp('(\\b)(' + wordsToBold.join('|') + ')(\\b)','ig'), '$1<b>$2</b>$3');
+						}
+						var boldedSectionContent = makeBold(sectionContent, propWords);
+						html += "<p>WikiWilly found that here: </p><p>..." + boldedSectionContent + "...</p>"
 						html += "<p><a href=https://en.wikipedia.org/wiki/" + encodeURIComponent(selectedPageTitle) + ">Wikipedia</a></p>"
 						
 						$("#factSearchResult").html(html);

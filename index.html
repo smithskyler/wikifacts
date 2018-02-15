@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WikiFacts</title>
+    <link rel="stylesheet" href="/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <h1>WikiFacts - Ask WikiWilly</h1>
+	  <div class="container">
+		<div class="left"></div>
+		<div class="content">
+	  		<form>
+				<label>Subject</label>
+				<input id="factSubject" type="text" placeholder="What is your fact about?"/>
+		  		<br />
+				<label>Fact</label>
+				<input id="factProposition" type="text" placeholder="What do you want to check?"/>
+		  		<br />
+		  		<input id="factSubmit" type="button" value="CHECK FACT" />
+			</form>
+	  
+		  	<div id="factSearchResult">
+				<h2 id="factSearchResultHeader"></h2>
+				<h2 id="factSearchResultContentHeader"></h2>
+				<p id="factSearchResultContent"></p>
+				<p id="factSearchResultLink"><a id="factSearchResultURL"></a></p>
+			</div>
+		</div>
+		<div class="right"></div>
+	  </div>
+	  
+	  <br />
+	  <br />
+	  <footer>
+		  <p><a href="https://github.com/smithskyler/wikifacts">Github</a></p>
+	  </footer>
+	  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script text="type/javascript" src="/script.js"></script>
+
+  </body>
+</html>
